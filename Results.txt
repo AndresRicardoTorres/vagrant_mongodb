@@ -1,0 +1,9 @@
+#whit 1 master
+$ python kvpbench.py -d data/SCDB_2010_01_justiceCentered_LegalProvision.csv -t mongodb -l
+{'Benchmark': {'max': '37.82007', 'avg': '37.82007', 'samples': 1, 'min': '37.82007'}}
+$ python kvpbench.py -d data/SCDB_2010_01_justiceCentered_LegalProvision.csv -t mongodb -b
+{'Benchmark': {'max': '19.71111', 'avg': '19.71111', 'samples': 1, 'min': '19.71111'}}
+
+#With 1 master and 2 slaves
+{'Benchmark': {'max': '37.60258', 'avg': '37.60258', 'samples': 1, 'min': '37.60258'}}
+{'Benchmark': {'max': '19.61981', 'avg': '19.61981', 'samples': 1, 'min': '19.61981'}}
