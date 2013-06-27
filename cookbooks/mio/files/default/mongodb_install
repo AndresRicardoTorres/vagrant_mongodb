@@ -1,0 +1,3 @@
+#!/bin/bash
+tar -zxf /root/mongodb-linux-i686-2.4.4.tgz -C /root/
+mv /root/mongodb-linux-i686-2.4.4 /opt/mongodb

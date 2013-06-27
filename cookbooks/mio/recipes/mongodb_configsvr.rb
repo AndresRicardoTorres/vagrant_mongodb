@@ -1,0 +1,1 @@
+execute_file('mongodb_configsvr')

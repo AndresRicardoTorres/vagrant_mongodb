@@ -1,0 +1,4 @@
+#!/bin/bash
+mkdir /mongodata -p
+/opt/mongodb/bin/mongod --master --dbpath /mongodata --port 27017 > /tmp/master.log  2> /tmp/master.error &
+#web 28017
