@@ -1,4 +1,4 @@
 #!/bin/bash
 mkdir /data/configdb -p
-/opt/mongodb/bin/mongod --configsvr --dbpath /data/configdb --port 27019 > /tmp/configsvr.log  2> /tmp/configsvr.error &
+/opt/mongodb/bin/mongod --rest --configsvr --dbpath /data/configdb --port 27019 > /tmp/configsvr.log  2> /tmp/configsvr.error &
 #web 28019
