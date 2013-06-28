@@ -1,3 +1,0 @@
-#!/bin/bash
-mkdir -p /mongodata
-/opt/mongodb/bin/mongod --rest --slave --source 192.168.1.106--dbpath /mongodata &

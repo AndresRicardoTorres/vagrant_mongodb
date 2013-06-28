@@ -1,1 +1,0 @@
-execute_file('mongodb_slave2')
