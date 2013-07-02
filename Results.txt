@@ -7,3 +7,7 @@ $ python kvpbench.py -d data/SCDB_2010_01_justiceCentered_LegalProvision.csv -t 
 #With 1 master and 2 slaves
 {'Benchmark': {'max': '37.60258', 'avg': '37.60258', 'samples': 1, 'min': '37.60258'}}
 {'Benchmark': {'max': '19.61981', 'avg': '19.61981', 'samples': 1, 'min': '19.61981'}}
+
+#mongos
+{'Benchmark': {'max': '59.26547', 'avg': '59.26547', 'samples': 1, 'min': '59.26547'}}
+{'Benchmark': {'max': '38.76643', 'avg': '38.76643', 'samples': 1, 'min': '38.76643'}}

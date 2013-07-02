@@ -1,6 +1,8 @@
 #!/bin/bash
 mkdir /mongodata -p
-/opt/mongodb/bin/mongod --rest --replSet rs1 --dbpath /mongodata --port 27017 > /tmp/mongod.log  2> /tmp/mongod.error &
+mkdir /mongolog -p
+touch /mongolog/mongod.log
+/opt/mongodb/bin/mongod --rest --replSet rs1 --dbpath /mongodata --port 27017 --logpath /mongolog/mongo.log --logappend  > /tmp/mongod.log  2> /tmp/mongod.error &
 #web 28017
 sleep 3
 /opt/mongodb/bin/mongo /root/replicaSet1.js > /tmp/mongo.log 2> /tmp/mongo.error &

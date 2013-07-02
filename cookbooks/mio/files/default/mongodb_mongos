@@ -1,5 +1,8 @@
 #!/bin/bash
-/opt/mongodb/bin/mongos --configdb 192.168.1.101,192.168.1.102,192.168.1.103 --port 27017 > /tmp/mongos.log  2> /tmp/mongos.error  &
+mkdir /mongolog -p
+touch /mongolog/mongod.log
+/opt/mongodb/bin/mongos --configdb 192.168.1.101,192.168.1.102,192.168.1.103 --port 27017 --logpath /mongolog/mongo.log --logappend > /tmp/mongos.log  2> /tmp/mongos.error  &
 # port web 28017
+sleep 20
 ip=$(ifconfig eth1 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')
 /opt/mongodb/bin/mongo --host $ip /root/addShard.js > /tmp/addShard.log 2> /tmp/addShard.error &
